@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
+
 #include <stdlib.h>
 void insertionsort(int tablica[10], int ile_liczb)
 {
