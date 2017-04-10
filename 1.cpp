@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-#include <conio.h>
- 
+//bez bibilioteki
+
 /* Funkcja czyszc¹ca planszê */
 void wyczysc (char plansza[3][3])
 {
@@ -11,21 +11,21 @@ void wyczysc (char plansza[3][3])
     for (i=0;i<3;i++)
         for (j=0;j<3;j++)
             plansza[i][j]=' ';
- 
+
 }
- 
+
 /* Funkcja rysuj¹ca planszê na ekranie */
 void wypisz (char plansza[3][3])
 {
     system("cls"); // czyœc ekran. S¹ szybsze sposoby czyszczenia, ale ten jest w miare uniwersalny
- 
+
     printf("[%c][%c][%c]\n",plansza[0][0], plansza[0][1], plansza[0][2]);
     //printf("\n");
     printf("[%c][%c][%c]\n",plansza[1][0], plansza[1][1], plansza[1][2]);
    //printf("\n");
     printf("[%c][%c][%c]\n",plansza[2][0], plansza[2][1], plansza[2][2]);
 }
- 
+
 int pelna(char plansza[3][3])
 {
 int i, j;
@@ -34,7 +34,7 @@ int i, j;
             if (plansza[i][j] == ' ')
                 return 0;
     return 1;
- 
+
 }
 /*Funkcja ruch_gracza wykona nastepujace czynnosci:
 wyswietli plansze,
@@ -68,25 +68,25 @@ for (i=0;i<3;i++)
         &&(plansza[0][i]==plansza[1][i])
         &&(plansza[0][i]==plansza[2][i]) )
 return plansza [0][i];
- 
+
 } // for
- 
+
 if ((plansza[0][0]!=' ')
     && (plansza[0][0]==plansza[1][1])
     && (plansza[0][0]==plansza[2][2]))
     return plansza[0][0];
- 
+
 if ((plansza[2][0]!=' ')
 &&(plansza[2][0]==plansza[1][1])
 &&(plansza[2][0]==plansza[0][2]))
 return plansza[2][0];
- 
+
 if (pelna(plansza)==1)
     return 1;
 return 0;
- 
+
 } //sprawdz
- 
+
 int uzupelnij (char plansza[3][3], char c)
 {
 int i, j;
@@ -114,6 +114,6 @@ for (i=0;i<3;i++)
         return 1;
         }//if
         }//for
- 
+
     return 0;
 }
