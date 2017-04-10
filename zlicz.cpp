@@ -8,7 +8,7 @@ int c;
 void countingsort(void)
 {
 int i,k;
-for (i=0;i<20;i++) count[i]=0;//zerowanie tablicy pomocniczej
+for (i=0;i<20;i++) count[j]=0;//zerowanie tablicy pomocniczej
 for (i=0;i<10;i++) count[tablica[i]]++; //pobieranie i-tego wyrazu z tablicy i
 //zwiekszanie i-tego wyrazu tablicy pomocniczej
 c=1;
