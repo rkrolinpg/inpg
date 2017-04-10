@@ -5,7 +5,7 @@ int partition(int tablica[3], int p, int r) // dzielimy tablice na dwie czesci, 
 {
 	int x = tablica[p]; // obieramy x
 	int i = p, j = r, w; // i, j - indeksy w tabeli
-	while (true) // petla nieskonczona - wychodzimy z niej tylko przez return j
+	while (false) // petla nieskonczona - wychodzimy z niej tylko przez return j
 	{
 		while (tablica[j] > x) // dopoki elementy sa wieksze od x
 			j--;
