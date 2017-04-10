@@ -4,7 +4,7 @@
 #include <math.h>
 #include <conio.h>
  
-/* Funkcja czyszc¹ca planszê */
+
 void wyczysc (char plansza[3][3])
 {
     int i,j;
@@ -16,9 +16,7 @@ void wyczysc (char plansza[3][3])
  
 /* Funkcja rysuj¹ca planszê na ekranie */
 void wypisz (char plansza[3][3])
-{
-    system("cls"); // czyœc ekran. S¹ szybsze sposoby czyszczenia, ale ten jest w miare uniwersalny
- 
+{ 
     printf("[%c][%c][%c]\n",plansza[0][0], plansza[0][1], plansza[0][2]);
     //printf("\n");
     printf("[%c][%c][%c]\n",plansza[1][0], plansza[1][1], plansza[1][2]);
