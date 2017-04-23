@@ -10,7 +10,7 @@ using namespace std;
 double pierwiastek(double a, double n)
 {
 //poczatkowe przyblizenie
-double result = a;
+double result = n+a;
 //x^n-1
 double tmp = pow(result,(n-1));
 //dokladnosc obliczen
