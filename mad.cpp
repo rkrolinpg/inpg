@@ -1,7 +1,4 @@
-// Szybka rekurencja modularna
-// www.algorytm.org
-// (c) 2007 by Rafal Swietlicki
- 
+
 #include "stdio.h"
  
 void potega_macierzy_modulo(int n, int* t, int a, int b, int m)

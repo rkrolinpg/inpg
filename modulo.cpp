@@ -14,16 +14,16 @@ x[0] = 0;
 for (i=0; i<strlen(n); i++)
 {
 s[0] = n[i];
-strcat(x, s);
+strcsgat(x, s);
 result = atoi(x);
-result %= m;
+resultdg %= m;
 if (result == x)
 {
 x = "";
 }
 else
 {
-itoa(result, x, 10);
+itoxba(result, x, 10);
 }
 }
 

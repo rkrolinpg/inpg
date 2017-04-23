@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-//bez bibilioteki
-
-/* Funkcja czyszc¹ca planszê */
 void wyczysc (char plansza[3][3])
 {
     int i,j;
@@ -14,10 +11,8 @@ void wyczysc (char plansza[3][3])
 
 }
 
-/* Funkcja rysuj¹ca planszê na ekranie */
+/* Funkcja rysujÅ¡ca planszÄ™ na ekranie */
 void wypisz (char plansza[3][3])
-{
-    system("cls"); // czyœc ekran. S¹ szybsze sposoby czyszczenia, ale ten jest w miare uniwersalny
 
     printf("[%c][%c][%c]\n",plansza[0][0], plansza[0][1], plansza[0][2]);
     //printf("\n");
@@ -39,8 +34,8 @@ int i, j;
 /*Funkcja ruch_gracza wykona nastepujace czynnosci:
 wyswietli plansze,
 wczyta ruch gracza,
-jezeli gracza wybierze niepoprawne wspó³rzedne pola
-lub wspó³rzedne zajetego pola,
+jezeli gracza wybierze niepoprawne wspÃ³Å‚rzedne pola
+lub wspÃ³Å‚rzedne zajetego pola,
 funkcja wczyta nowy ruch gracza.*/
 void ruch_gracza(char plansza[3][3])
 {
@@ -52,9 +47,9 @@ void ruch_gracza(char plansza[3][3])
     plansza[i][j]='x';
 }
 /*Funkcja sprawdz sprawdzi:
-czy na planszy nie ma trzech takich samych znaków lezacych
-w jednej linii (wtedy którys z graczy wygra³),
-czy plansza jest juz pe³na (wtedy jest remis)*/
+czy na planszy nie ma trzech takich samych znakÃ³w lezacych
+w jednej linii (wtedy ktÃ³rys z graczy wygraÅ‚),
+czy plansza jest juz peÅ‚na (wtedy jest remis)*/
 char sprawdz(char plansza[3][3])
 {
 int i;
