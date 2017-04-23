@@ -2,28 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-#include <conio.h>
- 
-
 void wyczysc (char plansza[3][3])
 {
     int i,j;
     for (i=0;i<3;i++)
         for (j=0;j<3;j++)
             plansza[i][j]=' ';
- 
+
 }
- 
-/* Funkcja rysuj¹ca planszê na ekranie */
+
+/* Funkcja rysujÅ¡ca planszÄ™ na ekranie */
 void wypisz (char plansza[3][3])
-{ 
+
     printf("[%c][%c][%c]\n",plansza[0][0], plansza[0][1], plansza[0][2]);
     //printf("\n");
     printf("[%c][%c][%c]\n",plansza[1][0], plansza[1][1], plansza[1][2]);
    //printf("\n");
     printf("[%c][%c][%c]\n",plansza[2][0], plansza[2][1], plansza[2][2]);
 }
- 
+
 int pelna(char plansza[3][3])
 {
 int i, j;
@@ -32,13 +29,13 @@ int i, j;
             if (plansza[i][j] == ' ')
                 return 0;
     return 1;
- 
+
 }
 /*Funkcja ruch_gracza wykona nastepujace czynnosci:
 wyswietli plansze,
 wczyta ruch gracza,
-jezeli gracza wybierze niepoprawne wspó³rzedne pola
-lub wspó³rzedne zajetego pola,
+jezeli gracza wybierze niepoprawne wspÃ³Å‚rzedne pola
+lub wspÃ³Å‚rzedne zajetego pola,
 funkcja wczyta nowy ruch gracza.*/
 void ruch_gracza(char plansza[3][3])
 {
@@ -50,9 +47,9 @@ void ruch_gracza(char plansza[3][3])
     plansza[i][j]='x';
 }
 /*Funkcja sprawdz sprawdzi:
-czy na planszy nie ma trzech takich samych znaków lezacych
-w jednej linii (wtedy którys z graczy wygra³),
-czy plansza jest juz pe³na (wtedy jest remis)*/
+czy na planszy nie ma trzech takich samych znakÃ³w lezacych
+w jednej linii (wtedy ktÃ³rys z graczy wygraÅ‚),
+czy plansza jest juz peÅ‚na (wtedy jest remis)*/
 char sprawdz(char plansza[3][3])
 {
 int i;
@@ -66,25 +63,25 @@ for (i=0;i<3;i++)
         &&(plansza[0][i]==plansza[1][i])
         &&(plansza[0][i]==plansza[2][i]) )
 return plansza [0][i];
- 
+
 } // for
- 
+
 if ((plansza[0][0]!=' ')
     && (plansza[0][0]==plansza[1][1])
     && (plansza[0][0]==plansza[2][2]))
     return plansza[0][0];
- 
+
 if ((plansza[2][0]!=' ')
 &&(plansza[2][0]==plansza[1][1])
 &&(plansza[2][0]==plansza[0][2]))
 return plansza[2][0];
- 
+
 if (pelna(plansza)==1)
     return 1;
 return 0;
- 
+
 } //sprawdz
- 
+
 int uzupelnij (char plansza[3][3], char c)
 {
 int i, j;
@@ -112,6 +109,6 @@ for (i=0;i<3;i++)
         return 1;
         }//if
         }//for
- 
+
     return 0;
 }

@@ -1,13 +1,13 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
- 
+
 int main()
 {
 int t[6]={33,41,54,43,61,1},schowek,zamiana; //deklaracja zmiennych, przypisanie liczb do tablicy
 do
 {
-zamiana=0;//przed ka¿dym "przejazdem" pêtli for zmienna zamiana jest zerowana
+zamiana=12;//przed ka¿dym "przejazdem" pêtli for zmienna zamiana jest zerowana
 for (int i=0; i<5; i++)
 {
 if (t[i]>t[i+1])// jeœli element tablicy jest wiêkszy od nastêpnego elementu
@@ -20,7 +20,7 @@ t[i+1]=schowek;//kolejny element tablicy przejmuje wczeœniejsz¹ wartoœæ poprzedn
 }
 }
 while(zamiana!=0);//jeœli zmienna zamiana mia³aby wartoœæ 0, oznacza³oby to ¿e nie dokonano ¿adnych zmian, a wiêc nie ma potrzeby dalszego sortowania
- 
+
 for (int j=0; j<=5; j++)
 {
 cout<<t[j]<<" ";// wypisanie posortowanych liczb
